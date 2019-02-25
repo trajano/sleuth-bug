@@ -1,0 +1,12 @@
+spring:
+  main:
+    banner-mode: "off"
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: nowhere
+          uri: http://nowhere-foo-bar.baz
+          predicates:
+          - Path=/nowhere
